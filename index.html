@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="converter-card">
+        <div class="status-bar">
+            <span>9:41</span>
+            <div class="signal-icons">
+                <i class="fas fa-signal"></i>
+                <i class="fas fa-wifi"></i>
+                <i class="fas fa-battery-full"></i>
+            </div>
+        </div>
+        <h2>Temperature Converter</h2>
+
+        <div class="input-group">
+            <label for="temperatureInput">Degrees</label>
+            <input type="number" id="temperatureInput" placeholder="Enter temperature" value="72">
+            <p id="inputError" class="error-message"></p>
+        </div>
+
+        <div class="input-group">
+            <label for="unitSelect">Type</label>
+            <select id="unitSelect">
+                <option value="fahrenheit">Fahrenheit</option>
+                <option value="celsius">Celsius</option>
+                <option value="kelvin">Kelvin</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label for="resultDisplay">Result</label>
+            <input type="text" id="resultDisplay" readonly value="22.2222 °C">
+        </div>
+
+        <button id="convertButton" class="convert-btn">Convert</button>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>
